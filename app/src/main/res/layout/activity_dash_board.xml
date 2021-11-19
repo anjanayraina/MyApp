@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="#651199"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     tools:context=".DashBoard">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="374dp"
         android:layout_height="556dp"
         android:orientation="vertical"
@@ -19,6 +21,7 @@
         app:layout_constraintVertical_bias="0.788">
 
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="196dp"
             android:orientation="horizontal"
@@ -26,6 +29,7 @@
             android:paddingBottom="40dp">
 
             <ImageView
+
                 android:id="@+id/button"
 
 
@@ -50,13 +54,14 @@
 
         <TextView
 
-            android:textSize="30dp"
-
+            android:textStyle="bold"
             android:id="@+id/textView"
+
             android:layout_width="349dp"
             android:layout_height="56dp"
+            android:text="\t\t\t\t\t\t\t\t\t  CV           Education "
 
-            android:text="\t\t\t\t\t\t\t\t\t  CV           Education " />
+            android:textSize="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,14 +92,34 @@
         </LinearLayout>
 
         <TextView
-            android:textSize="30dp"
-
-
             android:id="@+id/textView2"
+            android:textStyle="bold"
+
             android:layout_width="351dp"
             android:layout_height="69dp"
-            android:text="      Projects      About Me" />
+            android:text="      Projects      About Me"
+            android:textSize="30dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_width="280dp"
+        android:layout_height="63dp"
+        android:background="#540d80"
+
+
+        android:paddingTop="10dp"
+        android:fontFamily="monospace"
+        android:text="DashBoard"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

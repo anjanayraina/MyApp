@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AboutMeApp">
         <activity
+            android:name=".PDFReaderActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashBoard"
             android:exported="false" />
         <activity
